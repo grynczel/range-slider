@@ -23,19 +23,17 @@ body {
   width: 40%;
 }
 
+.tv_img {
+  background-size: cover !important;
+}
+
 .img {
   position: absolute;
   height: 100vh;
   width: 100vw;
-}
-#img_1 {
-  background: url(img/1.jpg);
-  background-size: cover;
-}
+  background-size: cover !important;
+  filter: blur(5px);
 
-#img_2 {
-  background: url(img/2.jpg);
-  background-size: cover;
 }
 
 #img_2::after {
@@ -45,4 +43,27 @@ body {
   border: 2px solid black;
   top: 0;
   float: right;
+}
+
+.tv_img {
+  height: 75%;
+  width: 100%;
+  position: fixed;
+}
+
+#tv{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-image: url(img/screen.png);
+  background-size: contain;
+}
+#tv-container{
+  height: 745px;
+  width: 978px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
